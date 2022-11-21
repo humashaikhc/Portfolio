@@ -1,0 +1,27 @@
+@use "./variables" as *;
+
+*{
+    background-color: $color-primary;
+    padding:0;
+    margin:0.5rem;
+    box-sizing: border-box;
+    font-family:$font-family;
+    
+ }
+ #nav-links,
+ a:link,
+ a:visited
+{   
+    text-align: right;
+    font-weight: bold;
+    font-size: 20px;
+    color: $text-color;
+    text-decoration: none;
+    .nav1{
+        margin: 10px;
+    }
+    .nav2{
+        margin-right: 10px;
+    }
+    
+}
