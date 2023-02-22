@@ -170,7 +170,6 @@ section {
 }
 .skills__display-item:hover {
   background-color: #450b70;
-  cursor: pointer;
 }
 
 .projects {
@@ -197,7 +196,6 @@ section {
   border: 0.5rem solid #a95aec;
   position: relative;
   overflow: hidden;
-  cursor: pointer;
 }
 .projects__container-box img {
   height: 80%;
@@ -283,6 +281,28 @@ section {
   display: none;
 }
 
+.show-more {
+  display: block;
+  padding: 8px 15px;
+  background-color: #a95aec;
+  color: #450b70;
+  cursor: pointer;
+  margin-top: 2rem;
+  margin-left: 1.5rem;
+  font-size: 2rem;
+  border-radius: 5rem;
+  display: none;
+}
+.show-more i {
+  padding: 0 0.5rem;
+  font-size: 1.8rem;
+  color: #111;
+}
+
+.show-more:hover {
+  background-color: #cf95e5;
+}
+
 @media (max-width: 1200px) {
   html {
     font-size: 55%;
@@ -311,6 +331,17 @@ section {
   }
   body {
     padding: 0;
+  }
+  .show-more {
+    display: block;
+  }
+  .projects__container-box {
+    display: none;
+  }
+  .projects__container-box:nth-child(1),
+  .projects__container-box:nth-child(2),
+  .projects__container-box:nth-child(3) {
+    display: block;
   }
 }
 @media (max-width: 450px) {

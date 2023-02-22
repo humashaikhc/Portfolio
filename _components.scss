@@ -140,7 +140,6 @@ section {
   &__display {
     padding: 25px;
     border-left: 4px solid $dark;
-    //border-right: 4px solid $dark;
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -174,7 +173,7 @@ section {
     }
     &-item:hover {
       background-color: $dark;
-      cursor: pointer;
+      // cursor: pointer;
     }
   }
 }
@@ -183,7 +182,6 @@ section {
   display: flex;
   justify-content: center;
   flex-flow: column;
-  // padding: 25rem 10rem;
   padding: 25rem 5rem;
   &__heading {
     font-size: 5rem;
@@ -192,13 +190,9 @@ section {
   }
   &__container {
     display: flex;
-    // align-items: center;
-    // justify-content: center;
     flex-wrap: wrap;
-    //padding: 2rem 0rem;
     gap: 1.5rem;
     &-box {
-      //  flex:1 1 30rem;
       height: 25rem;
       width: 40rem;
       border-radius: 2rem;
@@ -206,14 +200,11 @@ section {
       border: 0.5rem solid $purple;
       position: relative;
       overflow: hidden;
-      cursor: pointer;
       img {
         height: 80%;
         width: 100%;
         object-fit: cover;
         border-radius: 0.5rem;
-        //  position: relative;
-        // z-index: 1;
       }
       img:hover {
         transform: scale(0.9);
@@ -241,7 +232,6 @@ section {
         font-size: 2.2rem;
         line-height: 4rem;
         text-align: center;
-        // margin-bottom: 1rem;
       }
       a:hover {
         background: $text-color;
@@ -294,6 +284,26 @@ section {
   z-index: 1000;
   display: none;
 }
+.show-more {
+  display: block;
+  padding: 8px 15px;
+  background-color: $purple;
+  color: $dark;
+  cursor: pointer;
+  margin-top: 2rem;
+  margin-left: 1.5rem;
+  font-size: 2rem;
+  border-radius: 5rem;
+  i {
+    padding: 0 0.5rem;
+    font-size: 1.8rem;
+    color: $background;
+  }
+  display: none;
+}
+.show-more:hover {
+  background-color: $yellow;
+}
 
 @media (max-width: 1200px) {
   html {
@@ -327,6 +337,18 @@ section {
   body {
     padding: 0;
   }
+
+  .show-more {
+    display: block;
+  }
+  .projects__container-box {
+    display: none;
+  }
+  .projects__container-box:nth-child(1),
+  .projects__container-box:nth-child(2),
+  .projects__container-box:nth-child(3) {
+    display: block;
+  }
 }
 @media (max-width: 450px) {
   html {
@@ -356,14 +378,14 @@ section {
   .projects__heading {
     font-size: 3rem;
   }
-  .contact{
-    &__div{
+  .contact {
+    &__div {
       height: 55px;
       width: 55px;
       font-size: 30px;
       line-height: 55px;
     }
-    p{
+    p {
       font-size: 20px;
     }
   }
