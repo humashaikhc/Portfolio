@@ -6,134 +6,222 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
 
-  <nav class="navigation">
-  <div id="name">Huma Shaikh</div>
-  <div id="nav-links">
-    <a href="#about" class="nav1">About</a>
-    <a href="#Projects" class="nav2">Projects</a>
-    <a href="#getintouch" class="nav3">Contact</a>
-  </div>  
-  </nav>
-
-    <body>
-     
-      <header>
-        <h1 class="title">Junior Developer based in UK</h1>
-        <p class="title-description">Nunc aliquam faucibus ac in donec commodo id. Dui viverra sit feugiat massa pellentesque arcu at quis. Diam, elementum morbi pellentesque blandit suscipit sit. Neque, et consequat phasellus augue neque </p>
-      </header>
-
-      <section>
-        <div class="about">
-        <h2 id="about" class="heading-about">About</h2>
-        <img class="myphoto" src="./imgs/huma.jpg" alt="Huma shaikh"/>
-        <p class="paragraph">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-          repellendus, ullam accusantium sapiente dolor excepturi unde minus
-          fuga pariatur, beatae recusandae similique neque expedita molestias
-          modi. Nesciunt maiores qui sunt.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
-          velit, esse iure sapiente commodi possimus aliquid facilis minima modi
-          quidem illum eligendi, quam assumenda? Temporibus aspernatur ab nihil
-          ducimus molestias.    
-        </p>
-        </div>
-      </section>
-
-      <div class="Skills">
-        <h3 class="skills-title">Skills</h3>
-        <p class="skills-para">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque soluta
-          modi fugit at? Labore voluptatibus ratione reprehenderit expedita
-          minima. Itaque ex, commodi quisquam saepe vel consequuntur a soluta
-          expedita ad!
+  <body>
+    <header class="header">
+      <div class="about">
+        <img class="about__img" src="imgs/huma.jpg" alt="" />
+        <h3 class="about__name">Huma Shaikh</h3>
+        <p class="about__post">
+          Junior Software Developer & Junior Cloud Engineer
         </p>
       </div>
-      <div class="logos">
-        <div class="skillset">
-          <img src="./imgs/Vector 1.png" />
-          <p>GitHub</p>
-        </div>
-        <div class="skillset">
-          <img src="./imgs/Vector 2.png"/>
-          <p>HTML5</p>
-        </div>
-        <div class="skillset">
-          <img src="./imgs/Vector 3.png"/>
-          <p>CSS3</p>
-        </div>
-        <div class="skillset">
-          <img src="./imgs/Vector 4.png"/>
-          <p>JavaScript</p>
-        </div>
-        <div class="skillset">
-          <img src="./imgs/Vector 5.png"/>
-          <p>SCSS</p>
-        </div>
-        <div class="skillset">
-          <img src="./imgs/Vector 6.png"/>
-          <p>BEM</p>
-        </div>
-        <div class="skillset">
-          <img src="./imgs/Vector 7.png"/>
-          <p>React</p>
-        </div>
-        <div class="skillset">
-          <img src="./imgs/Vector 8.png"/>
-          <p>JAVA</p>
-        </div>
-        <div class="skillset">
-          <img src="./imgs/Vector 9.png"/>
-          <p>Spring Boot</p>
-        </div>
-      </div> 
-    
-      <section class="projects">
-        <h3 id="Projects" class="project-title">My Projects</h3>
-        <div class="Project-section">
-          <div class="projects__blank--mobile projects__grid1">
-            <img class="projects__image" src="./imgs/Rectangle 2.png"/>
-            <h3 class="projects__decription">Project 1</h3>
-          </div>
-          <div class="projects__blank--mobile projects__grid2">
-            <img class="projects__image" src="./imgs/Rectangle 2.png"/>
-            <h3 class="projects__decription">Project 2</h3>
-          </div>
-          <div class="projects__blank--mobile projects__grid3">
-            <img class="projects__image" src="./imgs/Rectangle 2.png"/>
-            <h3 class="projects__decription">Project 3</h3>
-          </div>
-          <div class="projects__blank--desktop projects__grid4">
-            <img class="projects__image" src="./imgs/Rectangle 2.png"/>
-            <h3 class="projects__decription">Project 4</h3>
-          </div>
-          <div class="projects__blank--desktop projects__grid5">
-            <img class="projects__image" src="./imgs/Rectangle 2.png"/>
-            <h3 class="projects__decription">Project 5</h3>
-          </div>
-          <div class="projects__blank--desktop projects__grid6">
-            <img class="projects__image" src="./imgs/Rectangle 2.png"/>
-            <h3 class="projects__decription">Project 6</h3>
-          </div>
-        </div>
-      </section>
-    </body>
-  </div>
-  <footer id="footer">
-    <p class="footer_getintouch" id="getintouch">Get in Touch.</p>
+      <nav class="navbar">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact Info</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <div class="social">
-    <a class="git_icon" href="https://github.com/humashaikhc/">
-      <img class="git" src="./imgs/git.png">
-    </a>
-    <a class="linkedin_icon "href="https://uk.linkedin.com/in/huma-shaikh-0b40b9203">
-      <img class="linkedin" src="./imgs/linkedin.png">
-    </a>
-    <a class="insta_icon" href="https://www.instagram.com/huma_fathoom">
-      <img class="insta" src="https://cdn-icons-png.flaticon.com/512/2111/2111491.png">
-    </a>
+    <div id="menu" class="fa-solid fa-bars"></div>
+    <section class="home" id="home">
+      <h3 class="home__hi">HI !!👋</h3>
+      <h1 class="home__name">I'm Huma Shaikh <i class="fa-solid fa-heart"></i></h1>
+      <p class="home__para">
+        I am a Junior Software Developer based in UK. Have also skilled in cloud
+        engineering through nology.
+      </p>
+      <a href="#about"
+        ><button class="home__btn">
+          See More<i class="fa-solid fa-user"></i></button
+      ></a>
+    </section>
+
+    <section class="aboutme" id="about">
+      <h1 class="aboutme__heading">More About Me <i class="fa-regular fa-comments"></i></h1>
+      <p class="aboutme__para">
+        I am a B.Eng in telecommunications and networking engineering. I have
+        always been curious about technology since early years of my education
+        which made me pursue a career in the field. I have worked on various
+        projects along my university years and learned to code in c++, gained
+        the necessary skills of a student such as time management, resilience,
+        communication skills, presentation skills. During my final year project
+        where I was tasked to build a sensor that could allow access to
+        individual who have safe body temperature and have valid RFID stored in
+        the data. It also had an extension to store the times of the people
+        logged in at an external IOT cloud. During this project cloud intrigued
+        my curiosity and I ended up with nology.I enjoyed my 3 months of coding
+        and building amazing projects. One of my favourite projects that I built
+        was the final client based project using terraform, jenkins and AWS.
+      </p>
+    </section>
+
+    <section class="skillz" id="skills">
+    <div class="skills">
+      <h1 class="skills__header">Skills <i class="fa-regular fa-keyboard"></i></h1>
+      <div class="skills__display">
+        <div class="skills__display-item">
+          <i class="fab fa-html5 fa-3x"></i>
+          <h4 class="skills__display-header">HTML5</h4>
+        </div>
+        <div class="skills__display-item">
+          <i class="fab fa-css3-alt fa-3x"></i>
+          <h4 class="skills__display-header">CSS3</h4>
+        </div>
+        <div class="skills__display-item">
+          <i class="fab fa-sass fa-3x"></i>
+          <h4 class="skills__display-header">Sass</h4>
+        </div>
+        <div class="skills__display-item">
+          <i class="fab fa-js fa-3x"></i>
+          <h4 class="skills__display-header">JavaScript</h4>
+        </div>
+        <div class="skills__display-item">
+          <i class="fab fa-react fa-3x"></i>
+          <h4 class="skills__display-header">React</h4>
+        </div>
+        <div class="skills__display-item">
+          <i class="fab fa-java fa-3x"></i>
+          <h4 class="skills__display-header">Java</h4>
+        </div>
+        <div class="skills__display-item">
+          <i class="fab fa-git-square fa-3x"></i>
+          <h4 class="skills__display-header">Git</h4>
+        </div>
+        <div class="skills__display-item">
+          <i class="fab fa-github fa-3x"></i>
+          <h4 class="skills__display-header">GitHub</h4>
+        </div>
+        <div class="skills__display-item">
+          <i class="fa-brands fa-node-js fa-3x"></i>
+          <h4 class="skills__display-header">NodeJS</h4>
+        </div>
+        <div class="skills__display-item">
+          <i class="fas fa-vial fa-3x"></i>
+          <h4 class="skills__display-header">Testing</h4>
+        </div>
+        <div class="skills__display-item">
+          <i class="fab fa-npm fa-3x"></i>
+          <h4 class="skills__display-header">NPM</h4>
+        </div>
+        <div class="skills__display-item">
+          <i class="fa-solid fa-terminal fa-3x"></i>
+          <h4 class="skills__display-header">Terminal</h4>
+        </div>
+        <div class="skills__display-item">
+          <i class="fa-brands fa-jenkins fa-3x"></i>
+          <h4 class="skills__display-header">jenkins</h4>
+        </div>
+        <div class="skills__display-item">
+          <i class="fa-brands fa-aws fa-3x"></i>
+          <h4 class="skills__display-header">AWS</h4>
+        </div>
+        <div class="skills__display-item">
+          <i class="fa-brands fa-docker fa-3x"></i>
+          <h4 class="skills__display-header">Docker</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="projects">
+    <h1 class="projects__heading" id="projects">My Projects <i class="fa-regular fa-folder-open"></i></i></h1>
+    <div class="projects__container">
+
+      <div class="projects__container-box">
+        <img src="./imgs/p1-portfolio.png" alt="">
+        <h3>Portfolio</h3>
+        <div class="projects__container-link">
+          <a href="https://github.com/humashaikhc" class="fa-brands fa-square-github"></a>
+          <a href="https://humashaikhc.github.io/Portfolio/" class="fa-regular fa-eye"></a>
+        </div>
+      </div>
+
+      <div class="projects__container-box">
+        <img src="./imgs/p2-calculator.png" alt="">
+        <h3>Calculator</h3>
+        <div class="projects__container-link">
+          <a href="https://github.com/humashaikhc/Project2-Calculator" class="fa-brands fa-square-github"></a>
+          <a href="https://humashaikhc.github.io/Project2-Calculator/" class="fa-regular fa-eye"></a>
+        </div>
+      </div>
+      <div class="projects__container-box">
+        <img src="./imgs/p3-game.png" alt="">
+        <h3>Game</h3>
+        <div class="projects__container-link">
+          <a href="https://github.com/humashaikhc/Project3-Game" class="fa-brands fa-square-github"></a>
+          <a href="https://humashaikhc.github.io/Project3-Game/" class="fa-regular fa-eye"></a>
+        </div>
+      </div>
+      <div class="projects__container-box">
+        <img src="./imgs/p4-ticket.png" alt="">
+        <h3>Ticket Tracker</h3>
+        <div class="projects__container-link">
+          <a href="https://github.com/humashaikhc/project4-ticket-tracker" class="fa-brands fa-square-github"></a>
+          <a href="https://humashaikhc.github.io/project4-ticket-tracker/" class="fa-regular fa-eye"></a>
+        </div>
+      </div>
+      <div class="projects__container-box">
+        <img src="./imgs/p5-api.png" alt="">
+        <h3>Beer-Api</h3>
+        <div class="projects__container-link">
+          <a href="https://github.com/humashaikhc/project5-punkapi" class="fa-brands fa-square-github"></a>
+          <a href="https://humashaikhc.github.io/project5-punkapi/" class="fa-regular fa-eye"></a>
+        </div>
+      </div>
+      <div class="projects__container-box">
+        <img src="./imgs/p6-chocolate.png" alt="">
+        <h3>Node-Project</h3>
+        <div class="projects__container-link">
+          <a href="https://github.com/humashaikhc/project6-node" class="fa-brands fa-square-github"></a>
+          <a href="https://github.com/humashaikhc/project6-node/blob/main/data/data.json" class="fa-regular fa-eye"></a>
+        </div>
+      </div>
+      <div class="projects__container-box">
+        <img src="./imgs/p7-hangman.png" alt="">
+        <h3>Hangman (Java)</h3>
+        <div class="projects__container-link">
+          <a href="https://github.com/humashaikhc/project7-hangman" class="fa-brands fa-square-github"></a>
+          <a href="#" class="fa-regular fa-eye"></a>
+        </div>
+      </div>
+      <div class="projects__container-box">
+        <img src="./imgs/p8-snap.png" alt="">
+        <h3>Snap (Java)</h3>
+        <div class="projects__container-link">
+          <a href="https://github.com/humashaikhc/Project8-Card" class="fa-brands fa-square-github"></a>
+          <a href="#" class="fa-regular fa-eye"></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="contact" id="contact">
+    <h1>Get in Touch <i class="fa-regular fa-address-card"></i></h1>
+  <div class="contact__div">
+    <a class="fa-brands fa-github" href="https://github.com/humashaikhc/"></a>
   </div>
-    <p class="email">fatma_shaikh21@yahoo.com</p>
-  </footer>
+  <div class="contact__div">
+    <a class="fa-brands fa-linkedin" href="https://uk.linkedin.com/in/huma-shaikh-0b40b9203"></a>
+  </div>
+  <div class="contact__div">
+    <a class="fa-brands fa-instagram" href="https://www.instagram.com/huma_fathoom"></a>
+  </div>
+  <p class="email">fatma_shaikh21@yahoo.com</p>
+  </section>
+    
+
+
+    <script src="./script.js"></script>
+  </body>
 </html>

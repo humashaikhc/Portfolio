@@ -1,28 +1,32 @@
 @use "./variables" as *;
 
 *{
-    background-color: $color-primary;
-    padding:0;
-    margin:0.5rem;
-    box-sizing: border-box;
     font-family:$font-family;
-    color: $text-color;
-    
- }
- #nav-links,
- a:link,
- a:visited
-{   
-    text-align: right;
-    font-weight: bold;
-    font-size: 20px;
-    color: $text-color;
+  //  background-color: $color-primary;
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
     text-decoration: none;
-    .nav1{
-        margin: 10px;
-    }
-    .nav2{
-        margin-right: 10px;
-    }
-    
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    color: $text-color;
+    transition: all .2s linear; 
+ }
+ *::selection{
+    background: $yellow;
+    color: $selection-color;
+ }
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+html::-webkit-scrollbar{
+    width:1.4rem;
+}
+html::-webkit-scrollbar-track{
+    background: $dark;
+}
+html::-webkit-scrollbar-thumb{
+    background: $yellow
 }
