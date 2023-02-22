@@ -18,6 +18,7 @@ links.addEventListener("click", ()=> {
   if (window.innerWidth <= 991 && bars){
     header.classList.remove('active')
     links.classList.toggle('active');
+    bars.classList.toggle('fa-times');
   }
 })
 
